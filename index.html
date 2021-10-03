@@ -3,20 +3,147 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" 
+        type="image/png" 
+        href="https://img.icons8.com/cotton/64/000000/task-planning.png">
         <title>Meeting Minutes</title>
     </head>
     <body>
-        <h1>Meeting Minutes</h1>
-        <h2>Brainstorming</h2>
-        <h3>October 1, 2021</h3>
-        <h3>Attendance</h3>
-        <ul>
-            <li>Vince Rothenberg</li>
-            <li>Steve Jobs</li>
-            <li>John Conway</li>
-            <li>Abraham Lincoln</li>
-            <li>Siddhartha Gautama</li>
-        </ul>
-        
+        <main>
+            <header>
+                <h1>Meeting Minutes</h1>
+                <h2>Brainstorming</h2>
+                <h3>October 1, 2021</h3>
+            </header>
+            <section>
+                <h3>Attendance</h3>
+                <ul>
+                    <li>Vince Rothenberg</li>
+                    <li>Steve Jobs</li>
+                    <li>John Conway</li>
+                    <li>Abraham Lincoln</li>
+                    <li>Siddhartha Gautama</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Agenda</h3> 
+                <ol>
+                    <li>Create first task</li>
+                    <li>Subsequently enqueue another task</li>
+                    <li>Finalize finishes</li>
+                </ol>
+                
+            </section>
+            <section>
+                <h3>Unfinished Business</h3>
+                <ul>
+                    
+                    <li><strong>Counting all the digits of pi</strong></li>
+                    <p>
+                    <details>
+                        <summary>Digits of Pi</summary>
+                        <p>3.1415926535 8979323846 2643383279 5028841971 6939937510 5820974944 5923078164 0628620899 8628034825 3421170679 ...</p>
+                    </details>
+                    </p>
+                    <li><strong>The heat death of the universe</strong></li>
+                    <p>This will probably take a long time.  Should de-prioritize.</p>
+                    <li><strong>Reading Goodnight Moon</strong></li>
+                    <p>Good 1 yard play.</p>
+                </ul>
+            </section>
+            <section>
+                <h3>Questions and Concerns</h3>
+                <p>
+                    <strong>What caused the big bang?</strong><br>
+                    Philosophers have long pondered this question.  Was there a prime mover?  Is the universe eternal?  Are we in a simulation? <br>
+                    <em>Some</em> cosmologists have responded:<br>
+                    <img src="https://i.kym-cdn.com/photos/images/original/001/014/886/9fa.jpg" alt="Lol who knows"/>
+                </p>
+                <p>
+                    <strong>Why is my car making that noise?</strong><br>
+                    There's something happening here, and what it is ain't exactly clear.  
+                </p>
+            </section>
+            <section>
+                <h3>Recordings</h3>
+                <p>Meeting audio:</p>
+                <audio controls>
+                    <source src="assets/meeting_audio.mp3" type="audio/mpeg">
+                </audio>
+                <br>
+                <p>Meeting video:</p>
+                <video width="320" height="240" controls>
+                    <source src="assets/meeting_video.mp4" type="video/mp4">
+                </video>
+                
+            </section>
+            <section>
+                <h3>Propose New Meeting</h3>
+                <form>
+                    <fieldset style="width:500px">
+                        <legend>Meeting</legend>
+                        <label for="title">Title:</label>
+                        <input type="text" id="fullname" name="fullname"><br><br>
+                        <label for="proposed_day">Proposed Day:</label>
+                        <input type="date" id="proposed_day" name="proposed_day"><br><br>
+                        <fieldset style="width:200px">
+                            <legend>Groups to Invite</legend>
+                            <input type="checkbox" id="vips" name="vips" value="VIPs">
+                            <label for="vips">Very Important Persons</label><br>
+                            <input type="checkbox" id="kips" name="kips" value="KIPs">
+                            <label for="kips">Kinda Important Persons</label><br>
+                            <input type="checkbox" id="grunts" name="grunts" value="Grunts">
+                            <label for="grunts">Grunts</label><br>
+                        </fieldset>
+                        <p>Importance</p>
+                        <input type="radio" id="high" name="importance" value="High">
+                        <label for="high">High</label><br>
+                        <input type="radio" id="medium" name="importance" value="Medium">
+                        <label for="medium">Medium</label><br>
+                        <input type="radio" id="low" name="importance" value="Low">
+                        <label for="low">Low</label><br>
+
+                        <br>
+                        <label for="agenda">Agenda</label>
+                        <textarea id="agenda" name="agenda" rows="6" cols="80"></textarea>
+                        <br><br>
+                        
+                        <fieldset style="width:500px">
+                            <legend>Organizer</legend>
+
+                            <label for="fullname">Full Name:</label>
+                            <input type="text" id="fullname" name="fullname"><br><br>
+
+                            <label for="email">Email:</label>
+                            <input type="text" id="email" name="email"><br><br>
+
+                            <label for="dept">Choose your department from the list:</label>
+                            <input list="departments" name="dept" id="dept">
+                            <datalist id="departments">
+                                <option value="Engineering">
+                                <option value="Management">
+                                <option value="Human Resources">
+                            </datalist><br><br>
+                            
+
+                            <label for="awesome">Select your awesomeness level:</label>
+                            <select name="awesome" id="awesome">
+                                <option value="oldbusted">Old and Busted</option>
+                                <option value="badsick">Bad and Sick</option>
+                                <option value="coolgood">Cool and Good</option>
+                                <option value="sublime">Hyper-dimensional Sublimity</option>                                 
+                            </select>
+                                                        
+                        </fieldset>
+                        <br>
+                        <button type="reset">Reset</button>
+                    </fieldset>
+                    
+                    <br>
+                    <input type="submit" value="Submit">
+                    <br><br>
+                </form>
+            </section>
+        </main>
     </body>
 </html>
