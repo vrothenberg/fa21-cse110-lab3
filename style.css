@@ -12,6 +12,18 @@ body {
     padding: .5em;
 }
 
+@media screen and (max-width: 992px) {
+    body {
+        width: 80vw;
+    }    
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        width: 90vw;
+    }    
+}
+
 h1 {
     color: rgb(255, 59, 63);
 }
@@ -45,17 +57,22 @@ form {
     font-size: 5mm;
     /* margin: <top> <right> <bottom> <left> */
     margin: 10px 20px 5px 10px;
+    position: static;
 
 }
 
 #questions {
     font-family: 'Lora', serif;
     padding: 1em;
-    display:block;
+    display:flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-content: center;
+    align-items: stretch;
 }
 
 #recordings {
-    width: 400px;
+    width: 600px;
     border-style: dashed;
     border-color: #afafaf;
     border-width: 2px;
@@ -64,16 +81,69 @@ form {
     padding-left: 10px;
     padding-right: 5px;
     padding-bottom: 10px;
+
+
+}
+
+#recordings h3 {
+    text-align: center;
+}
+
+.recording-grid {
+    display: grid;
+    row-gap:10px;
+    /*justify-items: center;*/
+    grid-template-columns: 500px;
+    grid-template-rows: auto;
+    grid-template-areas: "first"
+    "second"
+    "third";
+    
+}
+
+.recording-grid * {
+    text-align: center;
+}
+
+
+.item-first {
+    grid-area: first;
+    justify-self: stretch;
+}
+
+.item-second {
+    grid-area: second;
+    /*justify-self: center;*/
+}
+
+.item-third {
+    grid-area: third;
+    justify-self: right;
+}
+
+div.item-second > p {
+    font-size:1.2em;
 }
 
 #new-meeting-form {    
     padding: 15px 10px 10px 10px;   
     width: 7in;
+    display: block;
 
 }
 
 #new-meeting-form h3 {
     text-align: center;
+}
+
+#new-meeting-form .importance {
+    position: relative;
+    left: 20px;
+}
+
+#new-meeting-form .invites {
+    position: absolute;
+    left: 250px;
 }
 
 #business p {
@@ -91,4 +161,28 @@ form {
 
 .fix {
     text-decoration: underline wavy green;
+}
+
+input:hover  {
+    background-color:palegoldenrod;
+}
+
+button:active {
+    background-color:green;
+}
+
+.center {
+    text-align: center;
+} 
+
+button[type="submit"] {
+    font-size: 1.1em;
+}
+
+strong.hot ~ p {
+    color:purple;
+}
+
+.unordered > li + li {
+    color:mediumseagreen;
 }
