@@ -1,12 +1,84 @@
+@font-face {
+    font-family: "myFont";
+    src: url("")
+}
+
 body {
-    background-color: lightblue;
+    /* Need cool background color */
+    background-color: #efefef;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50vw;
+    max-width: 1000px;
+    padding: .5em;
 }
 
 h1 {
-    color: navy;
-    margin-left: 20px;
+    color: rgb(255, 59, 63);
 }
 
 h2 {
-    color: orangered;
+    color: 	hsl(0, 0%, 66%);    
+}
+
+header {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+form {
+
+    background-color:lightgray;
+
+}
+
+#attendance {
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+    display:inline;
+
+}
+
+#business {
+    font-family: 'Lora', serif;
+    font-size: 5mm;
+    /* margin: <top> <right> <bottom> <left> */
+    margin: 10px 20px 5px 10px;
+
+}
+
+#questions {
+    font-family: 'Lora', serif;
+    padding: 1em;
+    display:block;
+}
+
+#recordings {
+    width: 400px;
+    border-style: dashed;
+    border-color: #afafaf;
+    border-width: 2px;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+}
+
+#new-meeting-form {    
+    padding: 15px 10px 10px 10px;   
+    width: 7in;
+
+}
+
+#business p {
+    font-size: 1.1rem;
+}
+
+.ordered li {
+    font-size: 1em;
+    text-decoration: black;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 5px;
 }

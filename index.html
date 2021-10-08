@@ -6,7 +6,11 @@
         <link rel="icon" 
         type="image/png" 
         href="https://img.icons8.com/cotton/64/000000/task-planning.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:wght@500&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+
         <title>Meeting Minutes</title>
     </head>
     <body>
@@ -16,9 +20,9 @@
                 <h2>Brainstorming</h2>
                 <h3>October 1, 2021</h3>
             </header>
-            <section>
+            <section id="attendance">
                 <h3>Attendance</h3>
-                <ul>
+                <ul class="unordered">
                     <li>Vince Rothenberg</li>
                     <li>Steve Jobs</li>
                     <li>John Conway</li>
@@ -28,14 +32,14 @@
             </section>
             <section>
                 <h3>Agenda</h3> 
-                <ol>
+                <ol class="ordered">
                     <li>Create first task</li>
                     <li>Subsequently enqueue another task</li>
                     <li>Finalize finishes</li>
                 </ol>
                 
             </section>
-            <section>
+            <section id="business">
                 <h3>Unfinished Business</h3>                    
                 <strong>Counting all the digits of pi</strong>
                 
@@ -49,7 +53,7 @@
                 <strong>Reading Goodnight Moon</strong>
                 <p>Good 1 yard play.  Estimated deliverable in 3 weeks.</p>
             </section>
-            <section>
+            <section id="questions">
                 <h3>Questions and Concerns</h3>
                 <p>
                     <strong>What caused the big bang?</strong><br>
@@ -62,7 +66,7 @@
                     There's something happening here, and what it is ain't exactly clear.  
                 </p>
             </section>
-            <section>
+            <section id="recordings">
                 <h3>Recordings</h3>
                 <p>Meeting audio:</p>
                 <audio controls>
@@ -75,7 +79,7 @@
                 </video>
                 
             </section>
-            <section>
+            <section id="new-meeting-form">
                 <h3>Propose New Meeting</h3>
                 <form>
                     <fieldset style="width:500px">
