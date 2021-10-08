@@ -48,7 +48,7 @@
                     <p>3.1415926535 8979323846 2643383279 5028841971 6939937510 5820974944 5923078164 0628620899 8628034825 3421170679 ...</p>
                 </details>
                 
-                <strong>The heat death of the universe</strong>
+                <strong class="hot">The heat death of the universe</strong>
                 <p>This will probably take a long time.  Should de-prioritize.</p>
                 <strong>Reading Goodnight Moon</strong>
                 <p>Good 1 yard play.  Estimated deliverable in <span class="oops">3 weeks</span> <span class="fix">0.82 months.</span></p>
@@ -65,19 +65,33 @@
                     <strong>Why is my car making that noise?</strong><br>
                     There's something happening here, and what it is ain't exactly clear.  
                 </p>
+                <p>
+                    <strong>Who killed Hannibal?</strong><br>
+                    Vurry mysterious.
+                </p>
             </section>
             <section id="recordings">
-                <h3>Recordings</h3>
-                <p>Meeting audio:</p>
-                <audio controls>
-                    <source src="assets/meeting_audio.mp3" type="audio/mpeg">
-                </audio>
-                <br>
-                <p>Meeting video:</p>
-                <video width="320" height="240" controls>
-                    <source src="assets/meeting_video.mp4" type="video/mp4">
-                </video>
                 
+                <h3>Recordings</h3>
+                <div class="recording-grid">
+                    <div class="item-first">
+                        <p>Meeting audio:</p>
+                        <audio controls>
+                            <source src="assets/meeting_audio.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <br>
+                    <div class="item-second">
+                        <p>Meeting video:</p>
+                        <video width="320" height="240" controls>
+                            <source src="assets/meeting_video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item-third">
+                        <p>Meeting pic:</p>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Sanzio_01_Plato_Aristotle.jpg/220px-Sanzio_01_Plato_Aristotle.jpg">
+                    </div>
+                </div>
             </section>
             <section id="new-meeting-form">
                 <h3>Propose New Meeting</h3>
@@ -88,7 +102,7 @@
                         <input type="text" id="title" name="title"><br><br>
                         <label for="proposed_day">Proposed Day:</label>
                         <input type="date" id="proposed_day" name="proposed_day"><br><br>
-                        <fieldset style="width:200px">
+                        <fieldset style="width:200px" class="invites">
                             <legend>Groups to Invite</legend>
                             <input type="checkbox" id="vips" name="vips" value="VIPs">
                             <label for="vips">Very Important Persons</label><br>
@@ -97,13 +111,15 @@
                             <input type="checkbox" id="grunts" name="grunts" value="Grunts">
                             <label for="grunts">Grunts</label><br>
                         </fieldset>
-                        <p>Importance</p>
-                        <input type="radio" id="high" name="importance" value="High">
-                        <label for="high">High</label><br>
-                        <input type="radio" id="medium" name="importance" value="Medium">
-                        <label for="medium">Medium</label><br>
-                        <input type="radio" id="low" name="importance" value="Low">
-                        <label for="low">Low</label><br>
+                        <section class="importance">
+                            <p>Importance</p>
+                            <input type="radio" id="high" name="importance" value="High">
+                            <label for="high">High</label><br>
+                            <input type="radio" id="medium" name="importance" value="Medium">
+                            <label for="medium">Medium</label><br>
+                            <input type="radio" id="low" name="importance" value="Low">
+                            <label for="low">Low</label><br>
+                        </section>
 
                         <br>
                         <label for="agenda">Agenda</label>
@@ -139,10 +155,11 @@
                         </fieldset>
                         <br>
                         <button type="reset">Reset</button>
-                    </fieldset>
-                    
+                    </fieldset>                    
                     <br>
-                    <input type="submit" value="Submit">
+                    <div class="submit-button center">
+                    <button type="submit" value="Submit">Submit</button>
+                    </div>
                     <br><br>
                 </form>
             </section>
