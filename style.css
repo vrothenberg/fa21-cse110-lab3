@@ -72,13 +72,23 @@ form {
 
 }
 
+#new-meeting-form h3 {
+    text-align: center;
+}
+
 #business p {
     font-size: 1.1rem;
 }
 
 .ordered li {
-    font-size: 1em;
-    text-decoration: black;
-    text-decoration-style: wavy;
-    text-decoration-thickness: 5px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+.oops {
+    text-decoration: line-through red 2px; 
+}
+
+.fix {
+    text-decoration: underline wavy green;
 }
